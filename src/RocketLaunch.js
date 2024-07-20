@@ -1,8 +1,8 @@
-function SpaceXLaunch() {
+function RocketLaunch() {
   return (
     <div className="App">
     </div>
   );
 }
 
-export default SpaceXLaunch;
+export default RocketLaunch;
