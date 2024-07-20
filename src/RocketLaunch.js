@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import './RocketLaunch.css';
 const RocketLaunch = () => {
 
   const [launch, setLaunch] = useState(null);
@@ -28,8 +28,7 @@ const RocketLaunch = () => {
           <h1>{launch.name}</h1>
           <p>Status: {launch.status.name}</p>
           <p>Rocket: {launch.rocket.configuration.name}</p>
-          <p>Mission: {launch.mission.name}</p>
-          <p>{launch.mission.description}</p>
+          <p>Mission: {launch.mission.name}  {launch.mission.description}</p>
           <p>Location: {launch.pad.location.name}, {launch.pad.location.country_code}</p>
           <p>Launch Time: {new Date(launch.net).toLocaleString()}</p>
         </>
