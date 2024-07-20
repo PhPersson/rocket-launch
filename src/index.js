@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import SpaceXLaunch from './SpaceXLaunch';
+import RocketLaunch from './RocketLaunch';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SpaceXLaunch />
+    <RocketLaunch />
   </React.StrictMode>
 );
