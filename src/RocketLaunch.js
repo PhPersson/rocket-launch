@@ -3,6 +3,7 @@ import './RocketLaunch.css';
 const RocketLaunch = () => {
 
   const [launch, setLaunch] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch('https://ll.thespacedevs.com/2.2.0/launch/upcoming/')
@@ -16,7 +17,12 @@ const RocketLaunch = () => {
       const nextLaunch = data.results[0]
       setLaunch(nextLaunch)
     })
-  });
+    .catch(error => {
+      setError(error);
+    });
+  }, []);
+
+  if (error) return <div>Error: {error.message}</div>;
 
   return (
     <div className="centered-container">
