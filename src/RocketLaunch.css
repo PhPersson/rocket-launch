@@ -29,3 +29,22 @@
     background-size: contain;
     animation: launch 5s linear infinite;
   }
+
+
+  @keyframes launch {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+      transform: translate(-50%, -100%);
+    }
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
