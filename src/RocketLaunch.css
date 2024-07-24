@@ -8,7 +8,19 @@
     padding: 20px;
   }
 
-
+  .more-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .launch-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px; 
+  }
 
   .rocket-animation {
     position: relative;
