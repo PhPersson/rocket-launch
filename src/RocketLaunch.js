@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import './RocketLaunch.css';
+
 const RocketLaunch = () => {
 
   const [launch, setLaunch] = useState(null);
@@ -26,6 +27,9 @@ const RocketLaunch = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
+
+
+    
     <div className="centered-container">
       {launch && (
         <>
@@ -45,9 +49,12 @@ const RocketLaunch = () => {
             {launch.image && (
             <img src={launch.image} alt={launch.name} className="launch-image" />
             )}
-          </div>
-        </>
+            
 
+            
+          </div>
+
+        </>
       )}
     </div>
     

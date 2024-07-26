@@ -1,26 +1,26 @@
 .centered-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    padding: 20px;
-  }
+  text-align: center;
+}
 
-  .more-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
+.more-info {
+  display: flex;
+  justify-content: space-around; /* Adjusted to provide spacing */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.launch-image {
+  flex: 1; /* Use flex to control width */
+  max-width: 500px; /* Max width for the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and map */
+}
+
+.launch-map {
+  flex: 1; /* Use flex to control width */
+  height: 300px; /* Fixed height for the map */
+}
   
-  .launch-image {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    margin-bottom: 20px; 
-  }
 
   .rocket-animation {
     position: relative;
