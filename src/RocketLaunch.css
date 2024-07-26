@@ -1,62 +1,47 @@
 .centered-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    padding: 20px;
-  }
+  text-align: center;
+}
 
-  .more-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .launch-image {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    margin-bottom: 20px; 
-  }
+.more-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  height: 300px;
+}
 
-  .rocket-animation {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
+.rocket-animation {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
 
-  .rocket {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 100px;
-    background: url('rocket.png') no-repeat center center;
-    background-size: contain;
-    animation: launch 5s linear infinite;
-  }
+.rocket {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 100px;
+  background: url('rocket.png') no-repeat center center;
+  background-size: contain;
+  animation: launch 5s linear infinite;
+}
 
 
-  @keyframes launch {
-    0% {
-      transform: translate(-50%, 0);
-    }
-    100% {
-      transform: translate(-50%, -100%);
-    }
+@keyframes launch {
+  0% {
+    transform: translate(-50%, 0);
   }
-  
-  h1 {
-    margin-bottom: 10px;
+  100% {
+    transform: translate(-50%, -100%);
   }
-  
-  p {
-    margin: 5px 0;
-  }
-  
+}
+.launch-image {
+  flex: 1; 
+  max-width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+}
+
