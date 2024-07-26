@@ -1,4 +1,4 @@
-# RocketLaunch Component
+# RocketLaunch
 ## Description
 The RocketLaunch component is a React component that fetches and displays information about the next upcoming rocket launch. It uses the SpaceDevs API to get data about the launch, including details about the rocket, mission, and launch site. The component also includes an animated rocket graphic and a link to the launch location on Google Maps.
 
