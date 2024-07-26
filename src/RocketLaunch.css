@@ -4,59 +4,44 @@
 
 .more-info {
   display: flex;
-  justify-content: space-around; /* Adjusted to provide spacing */
   align-items: center;
   margin-top: 20px;
+  height: 300px;
 }
 
+.rocket-animation {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.rocket {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 100px;
+  background: url('rocket.png') no-repeat center center;
+  background-size: contain;
+  animation: launch 5s linear infinite;
+}
+
+
+@keyframes launch {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(-50%, -100%);
+  }
+}
 .launch-image {
-  flex: 1; /* Use flex to control width */
-  max-width: 500px; /* Max width for the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Space between image and map */
+  flex: 1; 
+  max-width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
 }
 
-.launch-map {
-  flex: 1; /* Use flex to control width */
-  height: 300px; /* Fixed height for the map */
-}
-  
-
-  .rocket-animation {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-
-  .rocket {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 100px;
-    background: url('rocket.png') no-repeat center center;
-    background-size: contain;
-    animation: launch 5s linear infinite;
-  }
-
-
-  @keyframes launch {
-    0% {
-      transform: translate(-50%, 0);
-    }
-    100% {
-      transform: translate(-50%, -100%);
-    }
-  }
-  
-  h1 {
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin: 5px 0;
-  }
-  
